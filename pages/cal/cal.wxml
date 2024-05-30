@@ -1,0 +1,35 @@
+<!--pages/cal/cal.wxml-->
+<view class="container">
+  <view class="display" id="display">{{display}}</view>
+  <view class="buttons">
+    <!-- 第一行：退格，清屏，正负切换，加号 -->
+    <view class="button btn-color" data-op="backspace" bindtap="onOperatorTap">退格</view>
+    <view class="button btn-color" data-op="clear" bindtap="onOperatorTap">清屏</view>
+    <view class="button btn-color" data-op="toggle" bindtap="onOperatorTap">+/-</view>
+    <view class="button btn-color {{pendingOperation == 'add' ? 'active-operator' : ''}}" data-op="add" bindtap="onOperatorTap">+</view>
+    
+    <!-- 第二行：7, 8, 9, 除号 -->
+    <view class="button" data-num="7" bindtap="onNumberTap">7</view>
+    <view class="button" data-num="8" bindtap="onNumberTap">8</view>
+    <view class="button" data-num="9" bindtap="onNumberTap">9</view>
+    <view class="button btn-color {{pendingOperation == 'divide' ? 'active-operator' : ''}}" data-op="divide" bindtap="onOperatorTap">/</view>
+
+    <!-- 第三行：4, 5, 6, 乘号 -->
+    <view class="button" data-num="4" bindtap="onNumberTap">4</view>
+    <view class="button" data-num="5" bindtap="onNumberTap">5</view>
+    <view class="button" data-num="6" bindtap="onNumberTap">6</view>
+    <view class="button btn-color {{pendingOperation == 'multiply' ? 'active-operator' : ''}}" data-op="multiply" bindtap="onOperatorTap">x</view>
+
+    <!-- 第四行：1, 2, 3, 减号 -->
+    <view class="button" data-num="1" bindtap="onNumberTap">1</view>
+    <view class="button" data-num="2" bindtap="onNumberTap">2</view>
+    <view class="button" data-num="3" bindtap="onNumberTap">3</view>
+    <view class="button btn-color {{pendingOperation == 'subtract' ? 'active-operator' : ''}}" data-op="subtract" bindtap="onOperatorTap">-</view>
+
+    <!-- 第五行：0, 点号, 历史, 等号 -->
+    <view class="button" data-num="0" bindtap="onNumberTap">0</view>
+    <view class="button" data-num="." bindtap="onNumberTap">.</view>
+    <view class="button btn-color" data-op="history" bindtap="onOperatorTap">历史</view>
+    <view class="button btn-color" data-op="equals" bindtap="onOperatorTap">=</view>
+  </view>
+</view>

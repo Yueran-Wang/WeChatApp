@@ -1,0 +1,8 @@
+<!-- pages/history/history.wxml -->
+<view class="container">
+  <scroll-view class="history-list" scroll-y="true">
+    <block wx:for="{{history}}" wx:key="index">
+      <view class="history-item">{{item}}</view>
+    </block>
+  </scroll-view>
+</view>

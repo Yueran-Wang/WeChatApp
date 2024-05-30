@@ -1,0 +1,67 @@
+/* pages/test/test.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40rpx;
+}
+
+.question {
+  margin-top: 100rpx;
+  margin-bottom: 40rpx;
+  font-size: 1.2em;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40rpx;
+}
+
+.options radio-group {
+  margin-bottom: 40rpx;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 0;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.navigation button {
+  background: none;
+  color: #666666;
+}
+
+.btn-left {
+  text-align: left;
+}
+
+.btn-right {
+  text-align: right;
+}
+
+.btn-sub {
+  position: relative;
+}
+
+.btn-sub {
+  position: fixed;
+  bottom: 160rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20rpx;
+  background-color: #007aff;
+  color: #ffffff;
+  border: none;
+  border-radius: 100rpx;
+  text-align: center;
+}

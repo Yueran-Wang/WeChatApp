@@ -1,0 +1,4 @@
+<!--pages/result/result.wxml-->
+<view class="container">
+  <text>得分：{{score}} / {{total}}</text>
+</view>

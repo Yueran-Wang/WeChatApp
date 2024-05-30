@@ -1,0 +1,19 @@
+/**index.wxss**/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+button {
+  position: fixed;
+  bottom: 160rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20rpx;
+  background-color: #007aff;
+  color: #ffffff;
+  border: none;
+  border-radius: 100rpx;
+  text-align: center;
+}

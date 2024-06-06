@@ -1,12 +1,11 @@
 {
   "pages": [
-    "pages/cal/cal",
-    "pages/history/history"
+    "pages/index/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "计算器",
-    "navigationBarBackgroundColor": "#f0f0f0"
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff"
   },
   "style": "v2",
   "componentFramework": "glass-easel",

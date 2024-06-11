@@ -1,7 +1,31 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/profile/profile",
+    "pages/study/study",
+    "pages/test/test",
+    "pages/history/history",
+    "pages/chat/chat"
   ],
+  "tabBar": {
+    "color": "#6c757d",
+    "selectedColor": "#0d6efd",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "assets/icons/index.png",
+        "selectedIconPath": "assets/icons/index_active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "assets/icons/profile.png",
+        "selectedIconPath": "assets/icons/profile_active.png"
+      }
+    ]
+  },
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "Weixin",

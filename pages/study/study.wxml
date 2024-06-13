@@ -1,2 +1,62 @@
 <!--pages/study/study.wxml-->
-<text>pages/study/study.wxml</text>
+<view class="text-container">
+  <!-- 文章标题 -->
+  <view class="title">
+    <text>网络安全基础：教学文章</text>
+  </view>
+
+  <!-- 各个教学点 -->
+  <view class="section">
+    <view class="heading">
+      <text>1. 理解网络钓鱼</text>
+    </view>
+    <view class="content">
+      <text>网络钓鱼是一种常见的网络攻击手段，攻击者通过发送看似合法的电子邮件，试图骗取个人信息，如登录凭证和信用卡信息。这些电子邮件通常包含链接，这些链接会导向假冒的网站以欺骗用户输入敏感信息。教育用户检查电子邮件的来源，并验证链接的真实性，是防止网络钓鱼的有效方法。</text>
+    </view>
+  </view>
+  <view class="section">
+    <view class="heading">
+      <text>2. 数据备份的重要性</text>
+    </view>
+    <view class="content">
+      <text>数据备份是网络安全的一个重要方面，它确保在数据丢失或被破坏的情况下，用户可以恢复其重要信息。有效的备份策略包括使用云存储服务和外部硬盘，并定期更新备份。避免仅在设备丢失后才进行备份，因为这常常为时已晚。</text>
+    </view>
+  </view>
+  <view class="section">
+    <view class="heading">
+      <text>3. HTTPS与HTTP</text>
+    </view>
+    <view class="content">
+      <text>了解HTTPS和HTTP之间的区别对于保障在线安全至关重要。HTTPS（超文本传输安全协议）是HTTP（超文本传输协议）的安全版本，它通过对所有传输数据进行加密，保护数据不被第三方窃取或篡改。在进行任何敏感交易时，用户应确保网站使用HTTPS协议。</text>
+    </view>
+  </view>
+  <view class="section">
+    <view class="heading">
+      <text>4. 强密码的构建</text>
+    </view>
+    <view class="content">
+      <text>构建一个强密码是保护账户安全的基石。强密码通常包括字母、数字和特殊字符的组合，且长度至少为12个字符。避免使用容易被猜到的密码，如“123456”或“password”，这些是常见的安全漏洞。</text>
+    </view>
+  </view>
+  <view class="section">
+    <view class="heading">
+      <text>5. 双因素认证</text>
+    </view>
+    <view class="content">
+      <text>双因素认证（2FA）为账户安全提供了额外的保护层。它要求用户在输入密码的基础上，进一步提供第二种形式的认证，如手机短信验证码或生物识别。这意味着即使密码被盗，没有第二因素也难以访问账户。</text>
+    </view>
+  </view>
+  <view class="section">
+    <view class="heading">
+      <text>6. 常见网络攻击类型</text>
+    </view>
+    <view class="content">
+      <text>了解不同类型的网络攻击，如病毒、蠕虫、和跨站脚本攻击（XSS），对于有效防御这些威胁至关重要。这些攻击可以破坏系统性能，窃取敏感数据，甚至控制受害者的设备。</text>
+    </view>
+  </view>
+
+  <!-- 结论 -->
+  <view class="conclusion">
+    <text>网络安全是一个持续的过程，需要用户、管理员和安全专家不断地学习和适应新的威胁。通过实施强大的密码政策、定期进行数据备份、使用HTTPS、开启双因素认证、并安装信誉良好的防病毒软件，我们可以大大提高自己的网络安全防护能力。始终保持警觉，并对任何可疑活动保持怀疑，是保护我们的数字生活安全的关键。</text>
+  </view>
+</view>

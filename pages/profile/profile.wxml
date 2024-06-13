@@ -1,2 +1,5 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<div class="center-container">
+  <image src="/assets/image/404.png"></image>
+  <text>页面正在建设中</text>
+</div>

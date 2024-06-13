@@ -1,2 +1,18 @@
 <!--pages/test/test.wxml-->
-<text>pages/test/test.wxml</text>
+<view class="container">
+  <view class="question">
+    <text>{{currentQuestion.question}}</text>
+  </view>
+  <view class="options">
+    <block wx:for="{{currentQuestion.options}}" wx:key="*this">
+      <radio-group bindchange="selectOption">
+        <radio color="#0d6efd" value="{{item}}" checked="{{selectedOption === item}}">{{item}}</radio>
+      </radio-group>
+    </block>
+  </view>
+  <view class="navigation">
+    <view class="btn-left" bindtap="prevQuestion">上一题</view>
+    <view class="btn-right" bindtap="nextQuestion">下一题</view>
+  </view>
+  <view class="btn-sub" bindtap="submitAnswers">提交</view>
+</view>

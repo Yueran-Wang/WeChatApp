@@ -1,2 +1,4 @@
 <!--pages/history/history.wxml-->
-<text>pages/history/history.wxml</text>
+<view class="container">
+  <text>本次得分：{{score}} / {{total}}</text>
+</view>

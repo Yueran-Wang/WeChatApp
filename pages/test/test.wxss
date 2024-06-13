@@ -1,1 +1,76 @@
 /* pages/test/test.wxss */
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 750rpx;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* 问题和选项的样式 */
+.question {
+  width: 630rpx;
+  height: 100rpx;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  color: #495057;
+}
+.options {
+  width: 630rpx;
+  color: #495057;
+  font-size: 32rpx;
+}
+
+/* 文本样式 */
+text {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+/* 单选按钮组 */
+radio-group {
+  display: block;
+  padding: 10rpx 0;
+}
+
+radio {
+  line-height: 64rpx;
+}
+
+/* 导航按钮样式 */
+.navigation {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 630rpx;
+  bottom: 280rpx;
+}
+
+/* 按钮样式 */
+.btn-left, .btn-right, .btn-sub {
+  display: block;
+  width: 285rpx;
+  height: 80rpx;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 60rpx;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-left:active, .btn-right:active, .btn-sub:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 提交按钮样式 */
+.btn-sub {
+  position: absolute;
+  background-color: #6c757d;
+  width: 630rpx;
+  bottom: 140rpx;
+}

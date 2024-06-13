@@ -1,2 +1,32 @@
-<!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<!-- 页面主容器 -->
+<view class="page-container">
+  <!-- 介绍文本区域 -->
+  <view class="flex-top">
+    <view class="intro-text">
+      <text>网安助手</text>
+      <text>跳入网络安全的海洋，通过各种有趣的测试和课程，加强您的知识储备。</text>
+      <text>我们的AI助手随时待命，为您解答疑惑。开始您的学习之旅吧！</text>
+    </view>
+  </view>
+  
+  <!-- 按钮区域 -->
+  <view class="flex-bottom">
+    <view class="button-row">
+      <!-- 学习按钮 -->
+      <view class="feature-button width-half" bindtap="navigateToStudy">
+        <image src="/assets/image/btn-study.png" class="button-image"></image>
+        <text>开始学习</text>
+      </view>
+      <!-- 测试按钮 -->
+      <view class="feature-button width-half" bindtap="navigateToTest">
+        <image src="/assets/image/btn-test.png" class="button-image"></image>
+        <text>开始测试</text>
+      </view>
+    </view>
+    <!-- AI助手按钮 -->
+    <view class="feature-button width-full" bindtap="navigateToAI">
+      <image src="/assets/image/btn-chat.png" class="button-image"></image>
+      <text>开始询问AI智能助手</text>
+    </view>
+  </view>
+</view>

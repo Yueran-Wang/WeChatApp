@@ -1,1 +1,77 @@
 /* pages/chat/chat.wxss */
+.chat-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 750rpx;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* 标题栏 */
+.title {
+  font-size: 48rpx;
+  color: #007bff;
+  font-weight: bold;
+  padding: 40rpx;
+  margin-top: 20rpx;
+}
+
+/* 返回栏 */
+.response {
+  width: 550rpx;
+  height: 400rpx;
+  background-color: #f8f9fa;
+  border-radius: 80rpx;
+  padding: 40rpx;
+  font-size: 32rpx;
+  color: #343a40;
+  line-height: 40rpx;
+  text-indent: 2em;
+}
+
+/* 输入框 */
+.input {
+  position: absolute;
+  width: 534rpx;
+  height: 100rpx;
+  bottom: 140rpx;
+  border: #007bff 8rpx solid;
+  background-color: #f8f9fa;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 80rpx;
+  color: #343a40;
+  padding: 0 40rpx;
+  font-size: 32rpx;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+}
+
+/* 按钮样式 */
+.btn {
+  position: absolute;
+  display: block;
+  width: 140rpx;
+  height: 80rpx;
+  bottom: 158rpx;
+  right: 80rpx;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 60rpx;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.bg {
+  width: 630rpx;
+  height: 630rpx;
+}

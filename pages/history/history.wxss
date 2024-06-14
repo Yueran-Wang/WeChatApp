@@ -1,1 +1,21 @@
 /* pages/history/history.wxss */
+.history-container {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 750rpx;
+  height: 80vh;
+}
+
+.title {
+  font-size: 48rpx;
+  color: #007bff;
+  font-weight: bold;
+  padding: 40rpx;
+}
+
+.content {
+  font-size: 42rpx;
+  color: #343a40;
+}

@@ -1,2 +1,9 @@
 <!--pages/chat/chat.wxml-->
-<text>pages/chat/chat.wxml</text>
+<view class="chat-container">
+    <view class="title">网络安全聊天</view>
+    <view class="response">{{response}}</view>
+    <image src="/assets/image/bg-ai.png" class="bg"></image>
+    <input class="input" type="text" placeholder="输入你的问题..." bindinput="bindInput" value="{{inputValue}}"/>
+    <view class="btn" bindtap="sendMessage">发送</view>
+</view>
+

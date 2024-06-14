@@ -1,4 +1,13 @@
 <!--pages/history/history.wxml-->
-<view class="container">
-  <text>本次得分：{{score}} / {{total}}</text>
+<view>
+  <block wx:if="{{showScore}}">
+    <view class="history-container">
+      <view class="title">你的成绩是</view>
+      <view class="content">{{score}}/{{total}}</view>
+    </view>
+  </block>
+  <block wx:else>
+    <view>历史记录：</view>
+    <!-- 历史记录列表 -->
+  </block>
 </view>

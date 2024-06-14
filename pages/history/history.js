@@ -1,3 +1,4 @@
+// pages/history/history.js
 Page({
   data: {
     score: 0,
